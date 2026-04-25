@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-size: small;
+}
+
+h1 {
+  font-size: large;
+}
+
+h2,
+h3,
+h4 {
+  font-size: smaller;
+}
+
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+@theme {
+  --color-primary: #449b6d;
+  --color-secondary: #aba272;
+  --color-cream: #effff8;
+  --color-glassbg: rgba(255, 255, 255, 0.6);
+  --color-bL: aqua;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE + Edge */
+  scrollbar-width: none; /* Firefox */
+}
